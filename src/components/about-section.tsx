@@ -1,30 +1,46 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+import parse from "html-react-parser";
 
-export function AboutSection() {
+export function AboutSection({
+  title,
+  subtitle,
+  info,
+  infoAsHtml,
+  noBottomMargin,
+  id,
+  isBgGrey,
+}: Readonly<{
+  title: string;
+  subtitle?: string;
+  info?: string;
+  infoAsHtml?: string;
+  noBottomMargin?: boolean;
+  id?: string;
+  isBgGrey?: boolean;
+}>) {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className={cn(
+        noBottomMargin ? "pt-16" : "py-16",
+        "relative",
+        isBgGrey ? "bg-gray-50" : "bg-white"
+      )}
+    >
+      <div className="absolute -top-14" id={id} />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Card>
           <CardHeader>
-            <CardTitle className="text-3xl font-bold text-center mb-2">
-              Over Roodkapje
-            </CardTitle>
-            <p className="text-xl text-center text-gray-600">
-              Geniet van de rust
-            </p>
+            <CardTitle className="text-3xl font-bold mb-2">{title}</CardTitle>
+            {subtitle && <p className="text-xl text-gray-600">{subtitle}</p>}
           </CardHeader>
           <CardContent>
-            <p className="text-gray-700 leading-relaxed">
-              Onze ruime vakantiewoning op Buitenplaats de Hongerige Wolf te
-              Stegeren, in het buitengebied van Ommen, wordt gedurende de
-              zomermaanden verhuurd aan liefhebbers van het mooie Salland. De
-              bungalow is op loopafstand gelegen van en kan worden gereserveerd
-              via de naastgelegen camping De Kleine Wolf. De camping
-              (www.kleinewolf.nl) heeft vele faciliteiten (oa zwembad,
-              visvijver, strand, fietscrossbaan) waar gebruik van gemaakt mag
-              worden, alsof je een plekje op de camping hebt. Kortom, het recept
-              voor een heerlijke vakantie!
-            </p>
+            {info && <p className="text-gray-700 leading-relaxed">{info}</p>}
+            {infoAsHtml && (
+              <div className="text-gray-700  leading-relaxed">
+                {parse(infoAsHtml)}
+              </div>
+            )}
           </CardContent>
         </Card>
       </div>

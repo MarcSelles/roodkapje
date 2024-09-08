@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <div className="relative bg-white overflow-hidden">
+    <div className="relative bg-white overflow-hidden pt-[74px]">
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
@@ -31,17 +32,11 @@ export function HeroSection() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10">
-                    Ontdek onze activiteiten
-                  </Button>
-                </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Button
-                    variant="outline"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
-                  >
-                    Reserveer nu
-                  </Button>
+                  <Link href="#reserveren">
+                    <Button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10">
+                      Reserveer nu
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
