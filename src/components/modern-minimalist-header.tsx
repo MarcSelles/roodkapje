@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function ModernMinimalistHeader() {
@@ -8,11 +9,13 @@ export function ModernMinimalistHeader() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
               <span className="sr-only">Roodkapje Ommen</span>
-              {/* <Image
-                className="h-8 w-auto sm:h-10"
-                src="/placeholder.svg?height=40&width=120"
+              <Image
+                className="rounded-full h-8 w-auto sm:h-14"
+                src="/logo.webp?height=40&width=120"
+                width={120}
+                height={60}
                 alt="Roodkapje Ommen Logo"
-              /> */}
+              />
             </Link>
           </div>
           <nav className="hidden md:flex space-x-10">
