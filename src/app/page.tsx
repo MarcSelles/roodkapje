@@ -31,19 +31,19 @@ export default function Home() {
       />
       <ImageGridWithModal
         imagesRow1={[
-          { src: "/roodkapje_buiten_2.jpeg", alt: "" },
-          { src: "/roodkapje_buiten_3.jpeg", alt: "" },
-          { src: "/roodkapje_buiten_6.jpeg", alt: "" },
-          { src: "/roodkapje_buiten_9.jpeg", alt: "" },
+          { src: "/images/roodkapje_buiten_2.jpeg", alt: "" },
+          { src: "/images/roodkapje_buiten_3.jpeg", alt: "" },
+          { src: "/images/roodkapje_buiten_6.jpeg", alt: "" },
+          { src: "/images/roodkapje_buiten_9.jpeg", alt: "" },
         ]}
         imagesRow2={[
-          { src: "/parallex_2.jpeg", alt: "" },
-          { src: "/roodkapje_buiten_1.jpeg", alt: "" },
-          { src: "/roodkapje_buiten_4.jpeg", alt: "" },
+          { src: "/images/parallex_2.jpeg", alt: "" },
+          { src: "/images/roodkapje_buiten_1.jpeg", alt: "" },
+          { src: "/images/roodkapje_buiten_4.jpeg", alt: "" },
         ]}
         imagesRow3={[
-          { src: "/roodkapje_buiten_5.jpeg", alt: "" },
-          { src: "/roodkapje_buiten_8.jpeg", alt: "" },
+          { src: "/images/roodkapje_buiten_5.jpeg", alt: "" },
+          { src: "/images/roodkapje_buiten_8.jpeg", alt: "" },
         ]}
       />
       <DroneVideoSection />
@@ -56,18 +56,18 @@ De recent vernieuwde badkamer met stortdouche bevindt zich op de benedenverdiepi
       />
       <ImageGridWithModal
         imagesRow1={[
-          { src: "/roodkapje_binnen_2.jpg", alt: "" },
-          { src: "/roodkapje_binnen_3.jpeg", alt: "" },
-          { src: "/roodkapje_binnen_8.jpeg", alt: "" },
-          { src: "/roodkapje_binnen_12.jpeg", alt: "" },
+          { src: "/images/roodkapje_binnen_2.jpg", alt: "" },
+          { src: "/images/roodkapje_binnen_3.jpeg", alt: "" },
+          { src: "/images/roodkapje_binnen_8.jpeg", alt: "" },
+          { src: "/images/roodkapje_binnen_12.jpeg", alt: "" },
         ]}
         imagesRow2={[
-          { src: "/roodkapje_binnen_5.jpg", alt: "" },
-          { src: "/roodkapje_binnen_13.jpeg", alt: "" },
+          { src: "/images/roodkapje_binnen_5.jpg", alt: "" },
+          { src: "/images/roodkapje_binnen_13.jpeg", alt: "" },
         ]}
         imagesRow3={[
-          { src: "/roodkapje_binnen_18.jpg", alt: "" },
-          { src: "/roodkapje_binnen_16.jpeg", alt: "" },
+          { src: "/images/roodkapje_binnen_18.jpg", alt: "" },
+          { src: "/images/roodkapje_binnen_16.jpeg", alt: "" },
         ]}
       />
       <AboutSection
@@ -80,12 +80,12 @@ Er zijn 4 slaapkamers, twee beneden waarvan slaapkamer 1 met wastafel, en 2 bove
       <ImageGridWithModal
         imagesRow1={[
           {
-            src: "/roodkapje_binnen_9.jpeg",
+            src: "/images/roodkapje_binnen_9.jpeg",
             alt: "",
             imageOverlayText: "Slaapkamer 1",
           },
           {
-            src: "/roodkapje_binnen_10.jpg",
+            src: "/images/roodkapje_binnen_10.jpg",
             alt: "",
             mobileSkip: true,
             imageOverlayText: "Slaapkamer 3",
@@ -93,25 +93,25 @@ Er zijn 4 slaapkamers, twee beneden waarvan slaapkamer 1 met wastafel, en 2 bove
         ]}
         imagesRow2={[
           {
-            src: "/roodkapje_binnen_6.jpeg",
+            src: "/images/roodkapje_binnen_6.jpeg",
             alt: "",
             imageOverlayText: "Slaapkamer 1",
           },
         ]}
         imagesRow3={[
           {
-            src: "/roodkapje_binnen_17.jpeg",
+            src: "/images/roodkapje_binnen_17.jpeg",
             alt: "",
             imageOverlayText: "Slaapkamer 2",
           },
           {
-            src: "/roodkapje_binnen_10.jpg",
+            src: "/images/roodkapje_binnen_10.jpg",
             alt: "",
             mobileOnly: true,
             imageOverlayText: "Slaapkamer 3",
           },
           {
-            src: "/roodkapje_binnen_15.jpeg",
+            src: "/images/roodkapje_binnen_15.jpeg",
             alt: "",
             imageOverlayText: "Slaapkamer 4",
           },

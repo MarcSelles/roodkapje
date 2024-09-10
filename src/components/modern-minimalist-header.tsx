@@ -10,8 +10,9 @@ export function ModernMinimalistHeader() {
             <Link href="/">
               <span className="sr-only">Roodkapje Ommen</span>
               <Image
+                unoptimized
                 className="rounded-full h-8 w-auto sm:h-14"
-                src="/logo.webp?height=40&width=120"
+                src="/images/logo.webp"
                 width={120}
                 height={60}
                 alt="Roodkapje Ommen Logo"

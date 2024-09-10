@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
 
 export function ImageGrid({
@@ -10,10 +11,11 @@ export function ImageGrid({
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((image, index) => (
           <div
-            key={crypto.randomUUID()}
+            key={uuidv4()}
             className={`relative ${index % 3 === 1 ? "row-span-2" : ""}`}
           >
             <Image
+              unoptimized
               src={image.src}
               alt={image.alt ?? "'"}
               layout="responsive"

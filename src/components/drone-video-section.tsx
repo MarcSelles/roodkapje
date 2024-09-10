@@ -14,7 +14,7 @@ export function DroneVideoSection() {
           <CardContent>
             <div className="aspect-w-16 aspect-h-9">
               <video
-                src="/drone.mp4"
+                src="/videos/drone.mp4"
                 className="w-full h-full rounded-lg"
                 controls
               />

@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
 import Image from "next/image";
+import { v4 as uuidv4 } from "uuid";
 
 type ImageProps = {
   src: string;
@@ -25,9 +26,9 @@ export function ImageGridWithModal({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:flex gap-3 sm:px-6 lg:px-8 py-8">
       {[imagesRow1, imagesRow2, imagesRow3].map((imageRow) => (
-        <div className="w-full sm:w-1/3" key={crypto.randomUUID()}>
+        <div className="w-full sm:w-1/3" key={uuidv4()}>
           {imageRow.map((image, index) => (
-            <Dialog key={crypto.randomUUID()}>
+            <Dialog key={uuidv4()}>
               <DialogTrigger
                 asChild
                 className={cn(
@@ -37,6 +38,7 @@ export function ImageGridWithModal({
               >
                 <div className={cn(`relative cursor-pointer mb-3`)}>
                   <Image
+                    unoptimized
                     src={image.src}
                     alt={image.alt ?? ""}
                     width={index % 3 === 1 ? 400 : 600}
@@ -53,6 +55,7 @@ export function ImageGridWithModal({
               <DialogContent className="max-w-[90vw] max-h-[90vh] border-none w-full h-full p-0">
                 <div className="relative max-h-[90vh]">
                   <Image
+                    unoptimized
                     src={image.src}
                     alt={image.alt ?? ""}
                     width={index % 3 === 1 ? 400 : 600}

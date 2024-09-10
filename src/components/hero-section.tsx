@@ -45,7 +45,8 @@ export function HeroSection() {
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <Image
-          src="/parallex_1.png?height=1080&width=1920"
+          unoptimized
+          src="/images/parallex_1.png?height=1080&width=1920"
           alt="Roodkapje Ommen landschap"
           width={1920}
           height={1080}
