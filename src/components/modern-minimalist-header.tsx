@@ -50,6 +50,12 @@ export function ModernMinimalistHeader() {
             >
               Slaapkamers
             </Link>
+            <Link
+              href="#plattegrond"
+              className="text-base font-medium text-gray-500 hover:text-gray-900"
+            >
+              Plattegrond
+            </Link>
           </nav>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <Link

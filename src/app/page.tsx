@@ -117,6 +117,15 @@ Er zijn 4 slaapkamers, twee beneden waarvan slaapkamer 1 met wastafel, en 2 bove
           },
         ]}
       />
+      <AboutSection id="plattegrond" title="Plattegrond" noBottomMargin />
+      <ImageGridWithModal
+        imagesRow1={[
+          { src: "/images/plattegrond_bg.png", alt: "" },
+          { src: "/images/plattegrond_verdieping.png", alt: "" },
+        ]}
+        imagesRow2={[]}
+        imagesRow3={[]}
+      />
       <AboutSection
         id="reserveren"
         isBgGrey
