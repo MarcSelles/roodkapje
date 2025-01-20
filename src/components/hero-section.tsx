@@ -44,7 +44,7 @@ export function HeroSection() {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        {/* <Image
+        <Image
           unoptimized
           src="/images/parallex_1.png?height=1080&width=1920"
           alt="Roodkapje Ommen landschap"
@@ -52,10 +52,7 @@ export function HeroSection() {
           height={1080}
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
           priority
-        /> */}
-        <video className="w-full h-full rounded-lg" autoPlay muted>
-          <source src="/videos/drone.mp4" type="video/mp4"></source>
-        </video>
+        />
       </div>
     </div>
   );
